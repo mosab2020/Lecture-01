@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        // Save to Firebase
         findViewById<Button>(R.id.btn_save).setOnClickListener {
             val id = findViewById<EditText>(R.id.et_id).text.toString()
             val name = findViewById<EditText>(R.id.et_name).text.toString()
